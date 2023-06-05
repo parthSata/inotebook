@@ -9,6 +9,9 @@ app.get('/', (req, res) => {
   res.send('Hello Harry!');
 });
 
+app.use('/api/auth', require('./Routes/auth')),
+app.use('/api/notes', require('./Routes/notes'))
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
