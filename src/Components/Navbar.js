@@ -8,7 +8,7 @@ export default function Navbar() {
       <nav className='navbar navbar-expand-lg bg-body-tertiary'>
         <div className='container-fluid'>
           <Link className='navbar-brand' to='/'>
-            Navbar
+            iNotebook
           </Link>
           <button
             className='navbar-toggler'
@@ -26,6 +26,11 @@ export default function Navbar() {
               <li className='nav-item'>
                 <Link className='nav-link active' aria-current='page' to='/'>
                   Home
+                </Link>
+              </li>
+              <li className='nav-item'>
+                <Link className='nav-link active' aria-current='page' to='/about'>
+                 About
                 </Link>
               </li>
             </ul>
